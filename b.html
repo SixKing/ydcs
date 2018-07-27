@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var preson ={
+			name : '张三',
+			age : 18,
+			school : ''
+		}
+		console.log(preson);	
+		Object.defineProperty(preson,"school",{
+			value:'qf',
+			writable:false,
+			enumerable:true,
+			configurable:true
+		})
+		delete preson.school;
+			for(var x in preson){
+				console.log(x);
+			}
+		preson.school="qh"
+		console.log(preson)
+	</script>
+</body>
+</html>

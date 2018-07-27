@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*function a(){
+			var x = 5;
+			console.log(eval(" var x = 3; x "));
+			console.log(x);
+		}
+		a();*/
+		var a = 6;
+		var obj ={
+			a : 1,
+			b : 2,
+			c : 3
+		}
+		function fn(){
+			console.log(this.a);	
+		}
+		fn.bind(obj)();
+		fn()
+	</script>
+</body>
+</html>
